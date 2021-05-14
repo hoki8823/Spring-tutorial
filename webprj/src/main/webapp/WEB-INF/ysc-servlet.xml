@@ -7,7 +7,10 @@
         http://www.springframework.org/schema/mvc
         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<bean id="/index" class="com.ysc.web.controller.IndexController"/>
+	<bean name="/index" class="com.ysc.web.controller.IndexController"/>
+	<bean name="/notice/list" class="com.ysc.web.controller.notice.ListController"/>
+	<bean name="/notice/detail" class="com.ysc.web.controller.notice.DetailController"/>
+	
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     	<property name="prefix" value="/WEB-INF/view/"></property>
     	<property name="suffix" value=".jsp"></property>
